@@ -1,0 +1,297 @@
+.meditation-tracker {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  margin-top: 80px;
+}
+
+.meditation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.meditation-header h2 {
+  font-size: 2rem;
+  color: #2d3748;
+}
+
+.streak-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.streak-count, .last-meditation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.streak-icon {
+  color: #f6ad55;
+  font-size: 1.5rem;
+}
+
+.calendar-icon {
+  color: #4299e1;
+  font-size: 1.5rem;
+}
+
+.meditation-timer {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.timer-display {
+  margin-bottom: 2rem;
+}
+
+.time {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2d3748;
+  font-family: monospace;
+}
+
+.time-remaining {
+  font-size: 1.2rem;
+  color: #718096;
+  margin-top: 0.5rem;
+}
+
+.duration-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.duration-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 20px;
+  background: #fff;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.duration-btn:hover:not(:disabled) {
+  background: #e2e8f0;
+}
+
+.duration-btn.active {
+  background: #4299e1;
+  color: white;
+  border-color: #4299e1;
+}
+
+.duration-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timer-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.control-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.control-btn.start {
+  background: #48bb78;
+  color: white;
+}
+
+.control-btn.start:hover {
+  background: #38a169;
+}
+
+.control-btn.pause {
+  background: #ecc94b;
+  color: white;
+}
+
+.control-btn.pause:hover {
+  background: #d69e2e;
+}
+
+.control-btn.resume {
+  background: #48bb78;
+  color: white;
+}
+
+.control-btn.resume:hover {
+  background: #38a169;
+}
+
+.control-btn.stop {
+  background: #f56565;
+  color: white;
+}
+
+.control-btn.stop:hover:not(:disabled) {
+  background: #e53e3e;
+}
+
+.control-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.meditation-form {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2d3748;
+  background: #fff;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.sessions-history {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sessions-history h3 {
+  margin-bottom: 1.5rem;
+  color: #2d3748;
+  font-size: 1.5rem;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.session-card {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.session-date {
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.session-duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.duration-icon {
+  color: #ecc94b;
+}
+
+.session-details {
+  color: #4a5568;
+}
+
+.session-details p {
+  margin: 0.5rem 0;
+}
+
+.session-details strong {
+  color: #2d3748;
+}
+
+@media (max-width: 768px) {
+  .meditation-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .streak-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .time {
+    font-size: 3rem;
+  }
+
+  .duration-buttons {
+    gap: 0.5rem;
+  }
+
+  .duration-btn {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .timer-controls {
+    flex-direction: column;
+  }
+
+  .control-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
